@@ -11,19 +11,19 @@ public class ExoApprenezJava {
 		calcEconomie(100);
 	}
 
-	static int calcRevenu(int extra) {
+	private static int calcRevenu(int extra) {
 
 		revenus -= extra;
 		return revenus;
 	}
 
-	static int calcEpargne(int extra) {
+	private static int calcEpargne(int extra) {
 
 		epargne += extra;
 		return epargne;
 	}
 
-	static void calcEconomie(int extra) {
+	private static void calcEconomie(int extra) {
 		revenus = calcRevenu(extra);
 		epargne = calcEpargne(extra);
 		revenus = revenus + (30 - 10) * 7;
