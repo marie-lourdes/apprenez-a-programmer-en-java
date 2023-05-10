@@ -4,6 +4,11 @@ public class ExoApprenezJava {
 	static int epargne = 500;
 	static int revenus = 2000;
 	static int ancienRevenus = 2000;
+	// avec les methode utilitaire , cette classe n est pas une classe de modeles
+	// mais une classe utilitaire
+	// dont les methodes sont accessibles directement avec la calsse et non une
+	// instance et on ajoute private pour que ces methode ne soit accessible a
+	// aucune autre classe
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
