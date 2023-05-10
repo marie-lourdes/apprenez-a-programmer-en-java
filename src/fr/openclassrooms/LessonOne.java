@@ -23,6 +23,14 @@ public class LessonOne {
 		System.out.println(
 				"There are " + daysInWeek + "days in a week.\nYour starting day in the month is: " + STARTINGDAY);
 
+		// melangez les types numeriques
+
+		int a = 5;
+		int b = 2;
+		float result = (float) a / b;
+		// (float) a =>caster la variable a et indiquer le type float aussi pour
+		// resultat sinon l'ordianteur retourne 2 au lieu de 2.5
+		System.out.println("result " + result);
 	}
 
 }
