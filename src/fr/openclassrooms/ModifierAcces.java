@@ -5,7 +5,7 @@ public class ModifierAcces {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Example.printText();
+		// Example.printText();
 		Shape.printNum();
 
 	}
@@ -17,6 +17,10 @@ class Shape {
 
 	static void printNum() {
 		Circle.circle(Circle.number);
+		center.text = "hola"; // surligné car la variable de la class example est static et utilisé
+								// directement sur la class sans instance
+		center.printText("bonjour");
+		System.out.println(center.text);
 
 	}
 }
@@ -31,9 +35,9 @@ class Circle extends Shape {
 }
 
 class Example {
-	private static String text = "hello";
+	public static String text = "hello";
 
-	private static void printText() {
+	public void printText(String text) {
 		System.out.println(text);
 	}
 }
