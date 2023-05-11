@@ -6,7 +6,7 @@ public class ModifierAcces {
 		// TODO Auto-generated method stub
 
 		Example.printText();
-		Circle.circle();
+		Shape.printNum();
 
 	}
 
@@ -14,20 +14,19 @@ public class ModifierAcces {
 
 class Shape {
 	static Example center = new Example(); // Essayez avec un private => Ko
-	int num = Circle.number;
 
-	int printNum(int num) {
-		return num;
+	static void printNum() {
+		Circle.circle(Circle.number);
+
 	}
-
 }
 
 class Circle extends Shape {
 	static int number = 1;
 
-	static void circle() {
+	public static void circle(int number) {
 
-		System.out.println("Center == " + center);
+		System.out.println(number);
 	}
 }
 
