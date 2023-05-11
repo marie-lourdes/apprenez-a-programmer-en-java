@@ -1,7 +1,5 @@
 package fr.openclassrooms;
 
-import static fr.openclassrooms.Shape.center;
-
 public class ModifierAcces {
 
 	public static void main(String[] args) {
@@ -15,10 +13,18 @@ public class ModifierAcces {
 }
 
 class Shape {
-	private static Example center = new Example(); // Essayez avec un private => Ko
+	static Example center = new Example(); // Essayez avec un private => Ko
+	int num = Circle.number;
+
+	int printNum(int num) {
+		return num;
+	}
+
 }
 
 class Circle extends Shape {
+	static int number = 1;
+
 	static void circle() {
 
 		System.out.println("Center == " + center);
