@@ -8,5 +8,19 @@ public class OC {
 		exempleStr = exempleStr.toUpperCase();
 		exempleStr = exempleStr.replace("HELL", "YEAH");
 		System.out.println(exempleStr);
+		ArrayExo.printTab();
+
 	}
+}
+
+class ArrayExo {
+	// la taille du tableau n est pas modifiable on peut lire length mais pas l
+	// assigné et modifer
+	public static int[] array1 = new int[2];
+	public static int num1 = array1.length;
+
+	public static void printTab() {
+		System.out.println(num1);
+	}
+
 }
