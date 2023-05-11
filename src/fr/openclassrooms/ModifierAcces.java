@@ -31,9 +31,9 @@ class Circle extends Shape {
 }
 
 class Example {
-	static String text = "hello";
+	private static String text = "hello";
 
-	public static void printText() {
+	private static void printText() {
 		System.out.println(text);
 	}
 }
