@@ -6,22 +6,20 @@ public class ModifierAcces {
 		// TODO Auto-generated method stub
 
 		// Example.printText();
-		Shape.printNum();
-
+		Shape myShape = new Shape();
+		myShape.printNum();
 	}
-
 }
 
 class Shape {
-	static Example center = new Example(); // Essayez avec un private => Ko
+	Example center = new Example(); // Essayez avec un private => Ko
 
-	static void printNum() {
+	void printNum() {
 		Circle.circle(Circle.number);
 		center.text = "hola"; // surligné car la variable de la class example est static et utilisé
 								// directement sur la class sans instance
 		center.printText("bonjour");
 		System.out.println(center.text);
-
 	}
 }
 
@@ -35,7 +33,7 @@ class Circle extends Shape {
 }
 
 class Example {
-	public static String text = "hello";
+	public String text = "hello";
 
 	public void printText(String text) {
 		System.out.println(text);

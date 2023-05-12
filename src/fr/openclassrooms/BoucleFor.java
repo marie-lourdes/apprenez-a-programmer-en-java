@@ -9,7 +9,7 @@ public class BoucleFor {
 			// Integer permet d utilser ces methodes sur un integer, ici i est integer nous
 			// convertissons en string
 			// car la methode bonjour recoit en argument un type String
-			bonjour("jean " + Integer.toString(i));
+			bonjour("Jean " + Integer.toString(i));
 		}
 
 		// boucle d enumeration for avec un tableau et l instance du tableau
@@ -19,7 +19,7 @@ public class BoucleFor {
 		}
 
 		// boucle for each pour iterer sur le tableau sans specifier le nombre de fois
-		// et sans length
+		// et sans length, la boucle itere sur number du tableau myArray
 		for (int number : myArray) {
 			System.out.println("iteration boucle for each sur tableau " + number);
 		}
